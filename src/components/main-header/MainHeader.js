@@ -1,7 +1,17 @@
 import React from "react";
 
 const MainHeader = () => {
-  return <h1>Main Header</h1>;
+  return (
+    <div className="main-header">
+      <div className="logo"></div>
+      <div className="links">
+        <ul></ul>
+      </div>
+      <div className="question-button">
+        <button>?</button>
+      </div>
+    </div>
+  );
 };
 
 export default MainHeader;
