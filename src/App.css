@@ -1,3 +1,60 @@
+.main-header {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+.main-header .logo {
+  text-align: center;
+  cursor: pointer;
+}
+.main-header .logo :hover {
+  color: #706fd3;
+  transition: 0.25s;
+}
+.main-header .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header .links ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.main-header .links ul :hover {
+  color: #706fd3;
+  transition: 0.25s;
+}
+.main-header .links ul li {
+  cursor: pointer;
+}
+.main-header .question-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-header .question-button :hover {
+  color: #706fd3;
+  transition: 1s;
+}
+.main-header .question-button button {
+  max-width: 250px;
+  min-width: 150px;
+  width: 50%;
+  min-height: 40px;
+  color: white;
+  background: transparent;
+  border: 2.5px solid #474787;
+  border-radius: 0.75em;
+  font-weight: bolder;
+}
+.main-header .question-button button p {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
 body {
   background: #2c2c54;
   color: white;

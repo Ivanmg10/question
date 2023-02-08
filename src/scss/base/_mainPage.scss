@@ -1,0 +1,69 @@
+@use "../utilities/variables" as v;
+
+.main-header {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+
+  .logo {
+    text-align: center;
+    cursor: pointer;
+
+    :hover {
+      color: v.$main-night-color-4;
+      transition: 0.25s;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+
+      :hover {
+        color: v.$main-night-color-4;
+        transition: 0.25s;
+      }
+
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .question-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :hover {
+      color: v.$main-night-color-4;
+      transition: 1s;
+    }
+
+    button {
+      max-width: 250px;
+      min-width: 150px;
+      width: 50%;
+      min-height: 40px;
+      color: white;
+      background: transparent;
+      border: 2.5px solid v.$main-night-color-3;
+      border-radius: 0.75em;
+      font-weight: bolder;
+
+      p {
+        padding: 0;
+        margin: 0;
+
+        font-size: 1em;
+      }
+    }
+  }
+}
